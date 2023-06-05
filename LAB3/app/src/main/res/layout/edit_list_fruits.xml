@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/idFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/dID"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:text="ID:"
+            android:textSize="30sp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/inputID"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="3"
+            android:inputType="number"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/nameFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/idFrame"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tName"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:text="Name:"
+            android:textSize="30sp"
+            android:textColorHint="@color/black"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/describeFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/nameFrame"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tDescribe"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:text="Describe:"
+            android:textSize="30sp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/inputDescribe"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/imageFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/describeFrame"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/dImage"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:text="Url image:"
+            android:textSize="30sp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/inputImage"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="3"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdd2"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:text="ADD"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageFrame"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+    <Button
+        android:id="@+id/btnUpdate2"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="UPDATE"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/imageFrame"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30dp"/>
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Cancel"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/imageFrame"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="30dp"/>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Delete"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/btnAdd2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

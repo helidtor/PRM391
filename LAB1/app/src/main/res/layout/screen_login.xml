@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="#FA7FCC26"
+        android:text="Next"
+        android:layout_alignParentRight="true"/>
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#939393"
+        android:text="Sign In Form"/>
+
+    <!-- Tên đăng nhập -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@id/note"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="32dp"
+        android:textColorHint="#BAB2B2"
+        android:layout_marginEnd="15dp"/>
+
+    <!-- Mật khẩu -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#BAB2B2"
+        android:inputType="textPassword"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"/>
+
+    <!-- Dòng đăng ký -->
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="32dp"
+        android:text="Not account yet? Create one"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#939393"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/Or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUp"
+        android:layout_marginTop="10dp"
+        android:text="------Or-----"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#AAA4A4"
+        android:gravity="center"
+        />
+
+    <!-- Nút Đăng nhập -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="SIGN IN"
+        android:layout_below="@id/Or"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#000000"
+        android:background="#BEBFBABA"
+        />
+
+</RelativeLayout>
